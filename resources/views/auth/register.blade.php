@@ -1,22 +1,37 @@
 @extends('layouts.app')
-
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+@section('css')
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+@endsection
 @section('content')
-<div class="container">
+<div class="container mt-5 pt-5">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-1 col-sm-4 vol-md-2 m-auto">
+
+            <div class="logo">
+                <img src="{{asset('/images/spc_logo.png')}}" alt="" srcset="">
+                <div class="school-txt">
+                    <h1 class="text-center">San Pedro College</h1>
+                </div>  
+            </div>
+           
+            <div class="card border-0 shadow-sm mx-auto" >
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+        
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-
+                        <div class="header text-center mb-5"><h2>Register</h2></div>
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                            <label for="name" class=" col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                              <span id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <i class="las la-user"></i> </span>
 
+                               
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -73,5 +88,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

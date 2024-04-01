@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('/images/spcbuilding.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text-center{
+    font-family: lora;
+    font-weight: bold;
+    color:white;
+}
+.or{
+    font-family: lato;
+    font-weight:700;
+    color:black;
+    opacity: 50%;
+    margin-bottom: 8%;
+    font-size: medium;
+}
+.header h2{
+    margin-top: 1% !important;
+    color: black;
+    font-weight: bolder;
+    font-family: lora;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.logo img{
+    width:30%;
+    align-self: center;
+    margin-bottom: 3%;
+}
+.school-txt{
+    display: block;
+}
+.btn-primary {
+    background-color: #00406D !important;
+    border-color:#00406D !important;
+  padding: 4% !important;
+}
+.btn-outline-primary:hover{
+    background-color: #00406D !important;
+    border-color:#00406D !important;
+    color: white !important;
+    font-weight: bold !important;
+    margin-bottom: 5% !important;
+    padding: 4% !important;
+}
+.btn-outline-primary{
+    border-color:#00406D !important;
+    color: #00406D !important;
+    font-weight: bold !important;
+    margin-bottom: 5% !important;
+    padding: 4% !important;
+}
+a{
+    text-decoration: none !important;
+    font-weight:700 !important;
+    color: #00406D !important;
+    font-family: lato;
+    margin-bottom: 5%;
+}
+.form-control{
+    padding: 4% !important;
+}
+/* <-------------------------------------->LogIn CSS<----------------------------------> */
+
